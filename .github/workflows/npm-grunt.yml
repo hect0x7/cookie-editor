@@ -48,10 +48,13 @@ jobs:
     - name: Test
       run: grunt eslint
 
+    - name: Build
+      run: grunt
+
     - name: Upload dist 
       uses: actions/upload-artifact@v3
       with:
         name: build
-        path: dist /
+        path: dist/
         if-no-files-found: error
         retention-days: 90
