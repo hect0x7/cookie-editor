@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     extraInfoInput.value = optionHandler.getExtraInfo();
     themeInput.value = optionHandler.getTheme();
 
-    if (!browserDetector.isSafari()) {
-      document.getElementById('github-sponsor').classList.remove('hidden');
-    }
+    // if (!browserDetector.isSafari()) {
+    //   document.getElementById('github-sponsor').classList.remove('hidden');
+    // }
   }
 
   /**

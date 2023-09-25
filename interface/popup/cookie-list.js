@@ -822,6 +822,7 @@ import { CookieHandlerPopup } from './cookieHandlerPopup.js';
    */
   function handleExportButtonClick() {
     const exportOption = optionHandler.getExportFormat();
+    // let exportOption = ExportFormats.JSON;
     switch (exportOption) {
       case ExportFormats.Ask:
         toggleExportMenu();
