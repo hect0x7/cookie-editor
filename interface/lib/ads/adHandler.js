@@ -81,24 +81,7 @@ export class AdHandler {
    * @param {function} callback
    */
   async canShowAnyAd() {
-    // noinspection PointlessBooleanExpressionJS
-    if (true || ActiveAds.length === 0) {
-      return false;
-    }
-
-    const lastDismissedAd = await this.storageHandler.getLocal(
-      this.getLastDismissKey(),
-    );
-    // No data means it was never dismissed
-    if (lastDismissedAd === null) {
-      return true;
-    }
-    // Don't show more ad if one was dismissed in less than 24hrs
-    if (new Date().getTime() - secondsInOneDay < lastDismissedAd.date) {
-      console.log('Not showing ads, one was dismissed recently.');
-      return false;
-    }
-    return true;
+    return false;
   }
 
   /**

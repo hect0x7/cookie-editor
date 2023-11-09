@@ -49,7 +49,7 @@ jobs:
 #      run: grunt eslint
 
     - name: Build
-      run: grunt
+      run: grunt --force
 
     - name: Upload dist 
       uses: actions/upload-artifact@v3
