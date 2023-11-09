@@ -81,7 +81,8 @@ export class AdHandler {
    * @param {function} callback
    */
   async canShowAnyAd() {
-    if (ActiveAds.length === 0) {
+    // noinspection PointlessBooleanExpressionJS
+    if (true || ActiveAds.length === 0) {
       return false;
     }
 
