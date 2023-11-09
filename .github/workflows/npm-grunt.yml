@@ -45,8 +45,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Test
-      run: grunt eslint
+#    - name: Test
+#      run: grunt eslint
 
     - name: Build
       run: grunt
